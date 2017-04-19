@@ -1,0 +1,52 @@
+[1mdiff --git a/app/index.html b/app/index.html[m
+[1mindex 3cf88c8..ff11c96 100644[m
+[1m--- a/app/index.html[m
+[1m+++ b/app/index.html[m
+[36m@@ -1,21 +1,41 @@[m
+ <!doctype html>[m
+[31m-<html lang="en" ng-app="phonecatApp">[m
+[32m+[m[32m<html lang="en" ng-app>[m
+   <head>[m
+[32m+[m[32m    <p>Hello, {{name}}!</p>[m
+[32m+[m
+     <meta charset="utf-8">[m
+     <title>Google Phone Gallery</title>[m
+     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />[m
+     <link rel="stylesheet" href="app.css" />[m
+     <script src="bower_components/angular/angular.js"></script>[m
+[31m-    <script src="app.js"></script>[m
+   </head>[m
+[31m-  <body ng-controller="PhoneListController">[m
+[32m+[m[32m  <body>[m
+ [m
+     <ul>[m
+[31m-      <li ng-repeat="phone in phones">[m
+[31m-        <span>{{phone.name}}</span>[m
+[31m-        <p>{{phone.snippet}}</p>[m
+[32m+[m[32m      <li>[m
+[32m+[m[32m        <span>Nexus S</span>[m
+[32m+[m[32m        <p>[m
+[32m+[m[32m          Fast just got faster with Nexus S.[m
+[32m+[m[32m        </p>[m
+[32m+[m[32m<p>Total number of phones: 3 {{phones.length}}</p>[m
+[32m+[m[32m      </li>[m
+[32m+[m[32m      <li>[m
+[32m+[m[32m        <span>Motorola XOOM™ with Wi-Fi</span>[m
+[32m+[m[32m        <p>[m
+[32m+[m[32m          The Next, Next Generation tablet.[m
+[32m+[m[32m        </p>[m
+       </li>[m
+     </ul>[m
+ [m
+[32m+[m[32m    <table>[m
+[32m+[m[32m  <tr><th>Price List 1</th></tr>[m
+[32m+[m[32m  <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i}}</td></tr>[m
+[32m+[m[32m</table>[m
+[32m+[m
+[32m+[m[32m<table>[m
+[32m+[m[32m  <tr><th>Price List 2</th></tr>[m
+[32m+[m[32m  <tr ng-repeat="ii in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{ii}}</td></tr>[m
+[32m+[m[32m</table>[m
+[32m+[m
+   </body>[m
+ </html>[m
